@@ -161,20 +161,81 @@ body {
   transform: scale(1);
   background-color: #3d107b;
 }
+
 .child {
   width: 20vw;
   height: 680px;
   margin-right: 1vw;
   margin-left: 1vw;
-  mix-blend-mode: luminosity;
+  position: relative;
   overflow: hidden;
+  background-color: #3d107b; /* cor base */
+  z-index: 1;
 }
-.child #genshin {
-  transform: scale(3) translate(-2vw, 90px);
+/* camada da imagem */
+#genshin::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/animeGirlWalking.gif");
+  background-size: cover;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(100%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
 }
-.child #mario {
-  transform: scale(1.2) translate(-6vw, 50px);
+#mario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/superMarioKart.gif");
+  background-size: cover;
+  background-position: 45.7% 20%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(100%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
 }
+
+#tinyThor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/tinyThor.gif");
+  background-size: cover;
+  background-position: 45% 20%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(100%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
+}
+
+#hyper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/hyperlight.gif");
+  background-size: cover;
+  background-position: 49% 25%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(100%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
+}
+
 .middlechild {
   position: absolute;
   top: 50%;
@@ -186,13 +247,6 @@ body {
   border-radius: 3000px;
   overflow: hidden;
   mix-blend-mode: luminosity;
-}
-
-.child #tinyThor {
-  transform: scale(1.5) translate(-3vw, 70px);
-}
-.child #hyper {
-  transform: scale(2.5) translate(-2vw, 90px);
 }
 
 .multiImg #madeline {
@@ -311,12 +365,13 @@ body {
   border-radius: 3000px;
   text-align: center;
   font: 400 25px "Mada", sans-serif;
-  width: 10vw;
+  width: 11vw;
+  min-width: 100px;
   color: whitesmoke;
   background-color: black;
 }
 .aulasBox {
-  width: 80vw;
+  width: 82vw;
   padding-top: 2%;
   padding-bottom: 2%;
   height: auto;
@@ -327,28 +382,66 @@ body {
   border-radius: 30px;
   position: relative;
 }
-
-.aulasBox img {
-  width: 82vw;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.338);
-  margin: auto;
-  z-index: -1;
-  mix-blend-mode: luminosity;
-  display: block;
-  border-radius: 30px;
+#aulas1,
+#aulas2,
+#aulas3 {
+  position: relative;
+  overflow: hidden;
+  background-color: #3d107b; /* cor base */
+  z-index: 1;
+}
+/* camada da imagem */
+#aulas1::before {
+  content: "";
   position: absolute;
-  filter: brightness(50%);
-}
+  inset: 0;
+  background-image: url("../imgs/animal-well-bubble.gif");
+  background-size: cover;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
 
-#banner1 {
-  transform: translate(0, -12vh);
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(50%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
 }
-#banner2 {
-  transform: translate(0, -22vh);
+#aulas2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/celesteMansion.gif");
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(50%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
 }
-#banner3 {
-  transform: translate(36vw, 5vh);
+#aulas3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/limbo-spider.gif");
+  background-size: cover;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
+
+  /* efeito luminosity e gamma simulada */
+  mix-blend-mode: luminosity;
+  filter: brightness(50%);
+
+  z-index: 0; /* fica por baixo do conteúdo */
+}
+/* conteúdo real */
+.content {
+  position: relative;
+  width: auto;
+  height: auto;
+  z-index: 2; /* garante que o texto fique visível */
 }
 
 .circle {
@@ -409,7 +502,7 @@ body {
 .effectsAulas {
   width: 7px;
   margin-left: 46px;
-  height: 75%;
+  height: 100%;
   background-color: #1aff00;
   position: absolute;
 }
@@ -740,24 +833,10 @@ body {
 
   .child {
     height: 680px;
-    mix-blend-mode: luminosity;
-    overflow: hidden;
-  }
-  .child #genshin {
-    transform: scale(3) translate(-4vw, 80px);
-  }
-  .child #mario {
-    transform: scale(1.2) translate(-11vw, 50px);
   }
   .middlechild {
     transform: translate(-50%, -50%) scale(0.75);
     display: block;
-  }
-  .child #tinyThor {
-    transform: scale(1.5) translate(-8vw, 80px);
-  }
-  .child #hyper {
-    transform: scale(2.5) translate(-4.5vw, 80px);
   }
 
   .multiImg #madeline {
@@ -836,21 +915,6 @@ body {
 
   .aulasBox {
     width: 80vw;
-  }
-
-  .aulasBox img {
-    width: 100vw;
-    height: auto;
-  }
-
-  #banner1 {
-    transform: translate(-20vw, -10vh);
-  }
-  #banner2 {
-    transform: translate(-15vw, -15vh);
-  }
-  #banner3 {
-    transform: translate(35vw, 10vh);
   }
 
   .groupText {
@@ -1026,25 +1090,11 @@ body {
     background-color: #3d107b;
   }
   .child {
-    height: 400px;
-    mix-blend-mode: luminosity;
-    overflow: hidden;
-  }
-  .child #genshin {
-    transform: scale(2) translate(-12vw, 30px);
-  }
-  .child #mario {
-    transform: scale(1) translate(-28.5vw, -150px);
+    height: 480px;
   }
   .middlechild {
     transform: translate(-50%, -50%) scale(0.55);
     display: block;
-  }
-  .child #tinyThor {
-    transform: scale(1) translate(-20vw, -80px);
-  }
-  .child #hyper {
-    transform: scale(2) translate(-11.5vw, 30px);
   }
 
   .multiImg #madeline {
@@ -1137,22 +1187,6 @@ body {
     display: block;
     margin: 10% auto 10% auto;
   }
-
-  .aulasBox img {
-    width: 150vw;
-    height: auto;
-  }
-  /*TODO : solve banner issue*/
-  #banner1 {
-    transform: translate(-45%, -10%);
-  }
-  #banner2 {
-    transform: translate(-27%, -20%);
-  }
-  #banner3 {
-    transform: translate(20%, 15%);
-  }
-
   .aulasFlex {
     margin: 25px auto 35px 0;
     display: flex;
