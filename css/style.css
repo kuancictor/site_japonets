@@ -314,6 +314,7 @@ body {
 
 #objetivoSvg svg {
   width: 800vw;
+  max-width: 2000px;
   height: auto;
   transform: rotate(35deg);
 }
