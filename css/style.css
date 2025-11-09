@@ -1009,10 +1009,10 @@ body {
   }
 
   .titleCode #titleCourse {
-    font: 400 80px "Pixelify sans", sans-serif;
+    font: 400 18vw "Pixelify sans", sans-serif;
   }
   .titleCode #subtitleCourse {
-    font: 400 15px "Pixelify sans", sans-serif;
+    font: 400 5vw "Pixelify sans", sans-serif;
   }
 
   .multiImg {
@@ -1142,7 +1142,7 @@ body {
     width: 150vw;
     height: auto;
   }
-
+  /*TODO : solve banner issue*/
   #banner1 {
     transform: translate(-45%, -10%);
   }
