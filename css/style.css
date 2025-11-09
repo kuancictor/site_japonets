@@ -739,6 +739,7 @@ body {
   }
 
   .child {
+    height: 680px;
     mix-blend-mode: luminosity;
     overflow: hidden;
   }
@@ -1025,25 +1026,25 @@ body {
     background-color: #3d107b;
   }
   .child {
-    height: 70vh;
+    height: 400px;
     mix-blend-mode: luminosity;
     overflow: hidden;
   }
   .child #genshin {
-    transform: scale(2vh) translate(-12vw, 25%);
+    transform: scale(2) translate(-12vw, 25%);
   }
   .child #mario {
-    transform: scale(1vh) translate(-28.5vw, -2%);
+    transform: scale(1) translate(-28.5vw, -2%);
   }
   .middlechild {
     transform: translate(-50%, -50%) scale(0.55);
     display: block;
   }
   .child #tinyThor {
-    transform: scale(1vh) translate(-20vw, 15%);
+    transform: scale(1) translate(-20vw, 15%);
   }
   .child #hyper {
-    transform: scale(2vh) translate(-11.5vw, 19%);
+    transform: scale(2) translate(-11.5vw, 19%);
   }
 
   .multiImg #madeline {
