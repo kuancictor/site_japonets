@@ -4,9 +4,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #3d107b;
   font-family: "Jost", sans-serif;
@@ -22,14 +24,12 @@ body {
   left: 0;
   width: 100%;
   min-height: 110px;
-  background: linear-gradient(
-    180deg,
-    #3d107b,
-    #3d107be2,
-    #3d107ba5,
-    #3d107b7d,
-    #3d107b00
-  );
+  background: linear-gradient(180deg,
+      #3d107b,
+      #3d107be2,
+      #3d107ba5,
+      #3d107b7d,
+      #3d107b00);
   z-index: 1000;
 
   /* alinhamento só dos links (não da logo) */
@@ -54,6 +54,7 @@ body {
   background: none;
   border: none;
 }
+
 .links:hover {
   transform: scale(115%);
 }
@@ -72,9 +73,11 @@ body {
   transform-origin: center;
   transition: all 0.2s ease;
 }
+
 .japonetsLogo:hover {
   transform: scale(165%);
 }
+
 .japonetsLogo #sol {
   margin: 5px;
   transform: translateY(1.5px);
@@ -100,6 +103,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .restImg img {
   mix-blend-mode: luminosity;
   margin: 5% 5vw 0 5vw;
@@ -124,6 +128,7 @@ body {
   justify-items: center;
   align-items: center;
 }
+
 .inspirationalQuote #autor {
   display: flex;
   font: 400 20px "Oxanium", sans-serif;
@@ -144,6 +149,7 @@ body {
   margin-bottom: 0;
   line-height: 1;
 }
+
 .titleCode #subtitleCourse {
   font: 400 25px "Pixelify sans", sans-serif;
   color: #1aff00;
@@ -169,9 +175,11 @@ body {
   margin-left: 1vw;
   position: relative;
   overflow: hidden;
-  background-color: #3d107b; /* cor base */
+  background-color: #3d107b;
+  /* cor base */
   z-index: 1;
 }
+
 /* camada da imagem */
 #genshin::before {
   content: "";
@@ -186,8 +194,10 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(100%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
+
 #mario::before {
   content: "";
   position: absolute;
@@ -201,7 +211,8 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(100%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
 
 #tinyThor::before {
@@ -217,7 +228,8 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(100%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
 
 #hyper::before {
@@ -233,7 +245,8 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(100%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
 
 .middlechild {
@@ -271,32 +284,38 @@ body {
   text-align: center;
   margin: 5%;
 }
+
 #objetivoText {
   font: 400 25px "Jost", sans-serif;
 }
+
 #objetivoText span {
   font: 550 25px "Jost", sans-serif;
   color: #ee8aff;
 }
+
 #objetivoBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
+
 #objetivoSvg {
   margin-left: 8%;
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: auto;
   transform-origin: center;
-  transform: rotate(35deg);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
 #objetivoSvg svg {
-  width: 600px;
-  height: 600px;
+  width: 800vw;
+  height: auto;
+  transform: rotate(35deg);
 }
 
 .jabaProgramacao {
@@ -311,24 +330,30 @@ body {
 .programarDificilBox {
   color: whitesmoke;
 }
+
 .programarDificilBox #programarDificil {
   font: 400 120px "Gabarito", sans-serif;
 }
+
 .programarDificilBox #programarDificilText {
   margin-top: 2%;
   margin-right: 20%;
   font: 400 25px "Gabarito", sans-serif;
 }
+
 .destaque {
   color: #ee8aff;
 }
+
 .multiImg2 {
   position: relative;
 }
+
 .multiImg2 #mountainCeleste img {
   border-radius: 30px;
   mix-blend-mode: luminosity;
 }
+
 .multiImg2 #bichoSilksong {
   position: absolute;
   transform: scale(0.4);
@@ -341,6 +366,7 @@ body {
   margin-bottom: 90px;
   color: whitesmoke;
 }
+
 .freeCourse p {
   display: flex;
   justify-content: center;
@@ -361,6 +387,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .aulas #aulasText p {
   border-radius: 3000px;
   text-align: center;
@@ -370,6 +397,7 @@ body {
   color: whitesmoke;
   background-color: black;
 }
+
 .aulasBox {
   width: 82vw;
   padding-top: 2%;
@@ -382,14 +410,17 @@ body {
   border-radius: 30px;
   position: relative;
 }
+
 #aulas1,
 #aulas2,
 #aulas3 {
   position: relative;
   overflow: hidden;
-  background-color: #3d107b; /* cor base */
+  background-color: #3d107b;
+  /* cor base */
   z-index: 1;
 }
+
 /* camada da imagem */
 #aulas1::before {
   content: "";
@@ -404,8 +435,10 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(50%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
+
 #aulas2::before {
   content: "";
   position: absolute;
@@ -419,8 +452,10 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(50%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
+
 #aulas3::before {
   content: "";
   position: absolute;
@@ -434,14 +469,17 @@ body {
   mix-blend-mode: luminosity;
   filter: brightness(50%);
 
-  z-index: 0; /* fica por baixo do conteúdo */
+  z-index: 0;
+  /* fica por baixo do conteúdo */
 }
+
 /* conteúdo real */
 .content {
   position: relative;
   width: auto;
   height: auto;
-  z-index: 2; /* garante que o texto fique visível */
+  z-index: 2;
+  /* garante que o texto fique visível */
 }
 
 .circle {
@@ -460,11 +498,13 @@ body {
   color: whitesmoke;
   font-family: "Gigudu", sans-serif;
 }
+
 #cicle2 {
   background-color: #ed1010;
   color: whitesmoke;
   font-family: "Gigudu", sans-serif;
 }
+
 #cicle3 {
   background-color: #01c63c;
   color: whitesmoke;
@@ -474,9 +514,11 @@ body {
 .aulasCircle.aulasC1 {
   background-color: #6a00ff;
 }
+
 .aulasCircle.aulasC2 {
   background-color: #ed1010;
 }
+
 .aulasCircle.aulasC3 {
   background-color: #01c63c;
 }
@@ -485,12 +527,14 @@ body {
   margin: 25px 20px 35px 130px;
   display: flex;
 }
+
 .aulasFlex p {
   margin: auto 20px auto 10px;
   line-height: 1;
   font: 500 20px "GFS Neohellenic", sans-serif;
   color: whitesmoke;
 }
+
 .aulasCircle {
   transform: translate(0, 4px);
   width: 15px;
@@ -499,6 +543,7 @@ body {
   background-color: whitesmoke;
   flex-shrink: 0;
 }
+
 .effectsAulas {
   width: 7px;
   margin-left: 46px;
@@ -510,9 +555,11 @@ body {
 #effects1 {
   background: linear-gradient(180deg, #6a00ff, #6a00ff7e, #6a00ff44, #6a00ff00);
 }
+
 #effects2 {
   background: linear-gradient(180deg, #ed1010, #ed10107a, #ed101042, #ed101000);
 }
+
 #effects3 {
   background: linear-gradient(180deg, #01c63c, #01c63c79, #01c63c49, #01c63c00);
 }
@@ -530,32 +577,34 @@ body {
   height: auto;
   margin: 30% auto 10% auto;
 }
+
 .blur {
   position: absolute;
   top: -3%;
   left: 0;
   width: 100%;
   height: 150%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.4),
-    rgb(0, 0, 0),
-    rgb(0, 0, 0),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0));
   z-index: -1;
 }
+
 .groupText {
   color: whitesmoke;
   text-align: center;
   z-index: 1;
   margin-bottom: 150px;
 }
+
 .groupText #groupTitle {
   font: 500 28px "Days One", sans-serif;
 }
+
 .groupText #groupSubtitle {
   font: 400 20px "Lexend Peta", sans-serif;
 }
@@ -594,27 +643,34 @@ body {
   left: -1.5%;
   width: 100%;
   height: 100%;
-  background-color: #2c0a6f; /* cor diferente para o efeito */
+  background-color: #2c0a6f;
+  /* cor diferente para o efeito */
   border-radius: 50px;
   border-width: 0px 0px 1px 1px;
   border-style: solid;
   border-color: whitesmoke;
   overflow: hidden;
-  z-index: -1; /* Fica atrás do .groupJaponets */
+  z-index: -1;
+  /* Fica atrás do .groupJaponets */
 }
+
 #profileBox {
   margin: 30px 4vw 30px 4vw;
   display: flex;
 }
+
 #profileCicle {
   width: 90px;
   height: 90px;
   border-radius: 100%;
   background: whitesmoke;
 
-  background-size: cover; /* cobre toda a área do círculo */
-  background-position: center; /* centraliza a imagem */
-  background-repeat: no-repeat; /* evita repetição */
+  background-size: cover;
+  /* cobre toda a área do círculo */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* evita repetição */
   flex-shrink: 0;
   margin: 0;
 }
@@ -622,32 +678,39 @@ body {
 #profileText {
   color: whitesmoke;
 }
+
 #profileText #nomes {
   margin: 15px 0 0 2vw;
   font: 500 25px "DynaPuff", sans-serif;
 }
+
 #info {
   display: flex;
 }
+
 #info p {
   margin: 5px 0px 0px 2vw;
   font: 500 20px "Jost", sans-serif;
 }
+
 #textJaponets {
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #textJaponets #bio {
   margin: 0px 12vw 0px 12vw;
   color: whitesmoke;
 }
+
 #bio p {
   font: 400 25px "Jost", sans-serif;
   width: 66vw;
   height: 25vh;
 }
+
 .botao {
   background: linear-gradient(0deg, #9d00ff, #6c10ed);
   border-radius: 100%;
@@ -668,13 +731,16 @@ body {
   transform: scale(140%);
   transition: all 0.2s ease;
 }
+
 .botao:hover {
   transform: scale(155%);
   background: linear-gradient(0deg, #e550ff, #ad3aff);
 }
+
 #leftButton {
   left: -1.5%;
 }
+
 #rightButton {
   right: -1.5%;
 }
@@ -692,14 +758,17 @@ body {
   align-items: center;
   margin: 4% 10% 10% 10%;
 }
+
 .duvidasTextBox {
   margin: 0 25% 0 0;
   color: whitesmoke;
 }
+
 .question {
   font: 450 40px "Imprima", sans-serif;
   margin-bottom: 5%;
 }
+
 .answer {
   font: 400 20px "Imprima", sans-serif;
   margin-bottom: 5%;
@@ -719,6 +788,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .redesSociais svg {
   margin: 20px;
   width: 40px;
@@ -726,6 +796,7 @@ body {
   transform: scale(100%);
   transition: all 0.2s ease;
 }
+
 .redesSociais svg:hover {
   transform: scale(115%);
 }
@@ -766,9 +837,11 @@ body {
     transform-origin: center;
     transition: all 0.2s ease;
   }
+
   .japonetsLogo:hover {
     transform: scale(1.5);
   }
+
   .japonetsLogo #sol {
     margin: 5px;
     transform: translateY(1.5px);
@@ -789,6 +862,7 @@ body {
     display: flex;
     justify-content: center;
   }
+
   .restImg img {
     mix-blend-mode: luminosity;
     margin: 5% 5vw 0 5vw;
@@ -807,6 +881,7 @@ body {
     font: 400 20px "Oxanium", sans-serif;
     text-align: center;
   }
+
   .inspirationalQuote #autor {
     font: 400 15px "Oxanium", sans-serif;
   }
@@ -823,6 +898,7 @@ body {
     margin-bottom: 0;
     line-height: 1;
   }
+
   .titleCode #subtitleCourse {
     font: 400 20px "Pixelify sans", sans-serif;
     color: #1aff00;
@@ -834,6 +910,7 @@ body {
   .child {
     height: 680px;
   }
+
   .middlechild {
     transform: translate(-50%, -50%) scale(0.75);
     display: block;
@@ -858,26 +935,31 @@ body {
     text-align: center;
     margin: 5%;
   }
+
   #objetivoText {
     font: 400 20px "Jost", sans-serif;
   }
+
   #objetivoText span {
     font: 550 20px "Jost", sans-serif;
     color: #ee8aff;
   }
+
   #objetivoBox {
     display: block;
     margin: auto;
   }
+
   #objetivoSvg {
     display: block;
     margin: 5% auto auto auto;
     width: 300px;
-    height: 300px;
+    height: auto;
   }
+
   #objetivoSvg svg {
     width: 300px;
-    height: 300px;
+    height: auto;
   }
 
   .jabaProgramacao {
@@ -891,21 +973,25 @@ body {
     color: whitesmoke;
     display: block;
   }
+
   .programarDificilBox #programarDificil {
     font: 400 80px "Gabarito", sans-serif;
     display: flex;
     justify-content: center;
   }
+
   .programarDificilBox #programarDificilText {
     display: block;
     margin: 3% auto 3% auto;
     font: 400 20px "Gabarito", sans-serif;
   }
+
   .multiImg2 {
     position: relative;
     display: flex;
     justify-content: center;
   }
+
   .multiImg2 #bichoSilksong {
     position: absolute;
     transform: scale(0.4);
@@ -935,32 +1021,40 @@ body {
     justify-content: space-between;
     align-items: normal;
   }
+
   #textJaponets #bio {
     margin: 0px 12vw 0px 12vw;
     color: whitesmoke;
   }
+
   #bio p {
     font: 400 16px "Jost", sans-serif;
   }
+
   .botao {
     width: 60px;
     height: 60px;
     transform: scale(140%);
   }
+
   .botao:hover {
     transform: scale(155%);
   }
+
   #leftButton {
     left: -1.5%;
   }
+
   #rightButton {
     right: -1.5%;
   }
+
   #duvidasTitle {
     font: 450 50px "lexend Peta", sans-serif;
     margin: 20% 10vw 20px 10%;
     color: whitesmoke;
   }
+
   .duvidas {
     position: relative;
     display: flex;
@@ -968,20 +1062,25 @@ body {
     align-items: center;
     margin: 4% 10% 10% 10%;
   }
+
   .duvidasTextBox {
     margin: 0px 25% 0 0;
   }
+
   .question {
     font: 450 20px "Imprima", sans-serif;
   }
+
   .answer {
     font: 400 15px "Imprima", sans-serif;
   }
+
   #duvidasImg img {
     width: 30vw;
     height: auto;
   }
 }
+
 @media (max-width: 768px) {
   body {
     width: 100%;
@@ -989,6 +1088,7 @@ body {
     margin: auto;
     overflow-x: hidden;
   }
+
   .headMenu {
     position: fixed;
     width: 100%;
@@ -1023,9 +1123,11 @@ body {
     transform-origin: center;
     transition: all 0.2s ease;
   }
+
   .japonetsLogo:hover {
     transform: scale(1.2);
   }
+
   .japonetsLogo #sol {
     transform: translateY(1.5px);
     width: 22px;
@@ -1039,6 +1141,7 @@ body {
     font: 400 50px "Pixelify Sans", sans-serif;
     color: whitesmoke;
   }
+
   .restImg {
     display: flex;
     justify-content: center;
@@ -1048,6 +1151,7 @@ body {
     max-width: 90%;
     margin: 5% auto 0 auto;
   }
+
   .restImg img {
     mix-blend-mode: luminosity;
     margin: auto;
@@ -1062,6 +1166,7 @@ body {
     font: 400 18px "Oxanium", sans-serif;
     text-align: center;
   }
+
   .inspirationalQuote #autor {
     font: 400 15px "Oxanium", sans-serif;
   }
@@ -1075,6 +1180,7 @@ body {
   .titleCode #titleCourse {
     font: 400 18vw "Pixelify sans", sans-serif;
   }
+
   .titleCode #subtitleCourse {
     font: 400 5vw "Pixelify sans", sans-serif;
   }
@@ -1089,9 +1195,11 @@ body {
     transform: scale(1);
     background-color: #3d107b;
   }
+
   .child {
     height: 480px;
   }
+
   .middlechild {
     transform: translate(-50%, -50%) scale(0.55);
     display: block;
@@ -1116,27 +1224,32 @@ body {
     text-align: center;
     margin: 10%;
   }
+
   #objetivoText {
     margin: auto 5vw auto 5vw;
     font: 400 20px "Jost", sans-serif;
   }
+
   #objetivoText span {
     font: 550 20px "Jost", sans-serif;
     color: #ee8aff;
   }
+
   #objetivoBox {
     display: block;
     margin: auto;
   }
+
   #objetivoSvg {
     display: block;
     margin: 5% auto auto auto;
     width: 300px;
-    height: 300px;
+    height: auto;
   }
+
   #objetivoSvg svg {
     width: 300px;
-    height: 300px;
+    height: auto;
   }
 
   .jabaProgramacao {
@@ -1148,27 +1261,32 @@ body {
     color: whitesmoke;
     display: block;
   }
+
   .programarDificilBox #programarDificil {
     font: 500 50px "Gabarito", sans-serif;
     display: flex;
     justify-content: center;
   }
+
   .programarDificilBox #programarDificilText {
     display: block;
     margin: 3% 10vw 0 10vw;
     font: 400 18px "Gabarito", sans-serif;
   }
+
   .multiImg2 {
     position: relative;
     display: flex;
     justify-content: center;
   }
+
   .multiImg2 img {
     margin-top: 5%;
     width: 350px;
     height: auto;
     transform: scale(1);
   }
+
   .multiImg2 #bichoSilksong {
     position: absolute;
     transform: scale(0.4);
@@ -1187,16 +1305,19 @@ body {
     display: block;
     margin: 10% auto 10% auto;
   }
+
   .aulasFlex {
     margin: 25px auto 35px 0;
     display: flex;
   }
+
   .aulasFlex p {
     margin: auto 2vw auto 2vw;
     line-height: 1;
     font: 400 18px "GFS Neohellenic", sans-serif;
     color: whitesmoke;
   }
+
   .aulasCircle {
     transform: translate(0, 4px);
     margin-left: 10vw;
@@ -1205,23 +1326,29 @@ body {
     border-radius: 100%;
     background-color: whitesmoke;
   }
+
   .blur {
-    display: block; /*Desativar caso erro!*/
+    display: block;
+    /*Desativar caso erro!*/
     width: 100%;
     height: 150%;
   }
+
   .groupText {
     color: whitesmoke;
     text-align: center;
     z-index: 1;
     margin-bottom: 150px;
   }
+
   .groupText #groupTitle {
     font: 500 20px "Days One", sans-serif;
   }
+
   .groupText #groupSubtitle {
     font: 400 15px "Lexend Peta", sans-serif;
   }
+
   .groupJaponets {
     margin-left: auto;
     margin-right: auto;
@@ -1236,6 +1363,7 @@ body {
     font: 500 18px "DynaPuff", sans-serif;
     width: 100%;
   }
+
   #info p {
     font: 500 14px "Jost", sans-serif;
   }
@@ -1246,56 +1374,70 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   #textJaponets #bio {
     margin: 0px 12vw 0px 14vw;
     color: whitesmoke;
   }
+
   #bio p {
     font: 400 15px "Jost", sans-serif;
   }
+
   .botao {
     width: 40px;
     height: 40px;
     transform: scale(140%);
     bottom: -70%;
   }
+
   .botao:hover {
     transform: scale(155%);
   }
+
   #leftButton {
     left: 20%;
   }
+
   #rightButton {
     right: 20%;
   }
+
   #duvidasTitle {
     font: 450 40px "lexend Peta", sans-serif;
     margin: 20% auto 20px 10%;
     color: whitesmoke;
   }
+
   .duvidas {
     position: relative;
     display: block;
     margin: 4% 7vw 10% 7vw;
   }
+
   .duvidasTextBox {
     margin: 0 auto 0 auto;
     text-align: center;
   }
+
   .question {
     font: 450 20px "Imprima", sans-serif;
   }
+
   .answer {
     font: 400 15px "Imprima", sans-serif;
   }
+
   #duvidasImg {
     display: flex;
     justify-content: center;
   }
+
   #duvidasImg img {
     width: 50vw;
     height: auto;
   }
+
   .redesSociais {
     width: 100%;
     display: flex;
