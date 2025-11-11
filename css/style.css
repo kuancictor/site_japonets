@@ -616,6 +616,7 @@ body {
   margin-right: auto;
   width: 90vw;
   height: 60vh;
+  min-height: 180px;
   background-color: #4a1496;
   border-radius: 50px;
   border-width: 1px 1px 0px 0px;
