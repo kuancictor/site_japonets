@@ -616,7 +616,7 @@ body {
   margin-right: auto;
   width: 90vw;
   height: 60vh;
-  min-height: 180px;
+  min-height: 400px;
   background-color: #4a1496;
   border-radius: 50px;
   border-width: 1px 1px 0px 0px;
@@ -1030,7 +1030,7 @@ body {
   }
 
   #bio p {
-    font: 400 18px "Jost", sans-serif;
+    font: 400 20px "Jost", sans-serif;
   }
 
   .botao {
